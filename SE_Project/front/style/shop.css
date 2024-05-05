@@ -1,11 +1,12 @@
 
 .container-shop{
-    width: 900px;
-    margin: auto;
-    max-width: 90vw;
+    width: 100%;
+    margin: 0;
+    /* max-width: 90vw; */
     text-align: center;
-    padding-top: 50px;
+    padding: 50px;
     transition: transform .5s;
+    background-color: #E8BC0E;
 }
 svg{
     width: 30px;
@@ -15,6 +16,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    font-weight: 500px;
 }
 .icon-cart{
     position: relative;
@@ -67,17 +69,18 @@ header{
 }
 
 /* cart */
-.cartTab{
+.cartTab {
     width: 400px;
     background-color: #353432;
     color: #eee;
     position: fixed;
-    top: 0;
+    top: 60px;
     right: -400px;
     bottom: 0;
     display: grid;
     grid-template-rows: 70px 1fr 70px;
     transition: .5s;
+    z-index: 999; /* Set a lower z-index than the navigation bar */
 }
 body.showCart .cartTab{
     right: 0;

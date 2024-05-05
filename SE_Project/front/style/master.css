@@ -11,7 +11,7 @@
     text-decoration: none;
   }
 
-.navb{
+  .navb {
     position: absolute;
     top: 0;
     left: 0;
@@ -20,6 +20,7 @@
     background-color: rgb(0, 0, 0);
     padding: 15px 200px;
     justify-content: space-between;
+    z-index: 1000; 
 }
 
 
@@ -142,7 +143,7 @@
     pointer-events: auto;
   }  
 .img-home{
-  align-items: center;
+  /* align-items: center; */
   height: 450px;
   width: 100%;
   top: 100px;
@@ -325,74 +326,85 @@
 
 
   .membership-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin: 10px; */
-    height: auto;
-}
-
-.membership-img{
-  height: 280px;
-  width: 100%;
-  position: static;
-}
-.membership-box {
-  position: absolute;
-    width: 80%; 
-    max-width: 800px; 
-    background-color: #ffffff; 
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-}
-
-.membership-box .left-p,
-.membership-box .right-p {
-    flex: 1; /* Take up equal space */
-    padding: 10px; /* Add some padding for space */
-}
-
-.membership-box h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    font-weight: 1000;
-}
-
-.membership-box p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    background: #ffffff;
-}
-
-.find-out-more {
-    border: 2px solid #000000; /* Add a solid black border */
-    padding: 20px; /* Add padding to the box for spacing */
-    margin: 25px auto; /* Center the box horizontally with some margin */
-}
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* Align items at the start of the cross axis */
+      height: auto;
+      position: relative; /* Add relative positioning */
+      background-image: url('../image/img4.jpg'); /* Set the background image */
+      background-size: cover; /* Cover the entire container */
+      background-position: center; /* Center the background image */
+  }
+  
+  .membership-box {
+      width: 80%;
+      max-width: 800px;
+      background-color: rgba(255, 255, 255, 0.7); /* Add a semi-transparent white background */
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column; /* Align children in a column */
+  }
+  
+  .membership-box .left-p,
+  .membership-box .right-p {
+      padding: 10px;
+  }
+  
+  .membership-box h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      font-weight: 1000;
+  }
+  
+  .membership-box p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+  }
+  
+  .find-out-more {
+      border: 2px solid #000000;
+      padding: 20px;
+      margin: 25px auto;
+      text-align: center; /* Center the text */
+  }
+  
+  .membership-box .find-out-more {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      background-color: #000000;
+      border-radius: 5px;
+      margin: 10px;
+      align-self: center; /* Align the button to the center */
+      transition: background-color 0.3s;
+  }
+  
+  .membership-box .find-out-more:hover {
+      background-color: #f9f4f4;
+      color: #000000;
+  }
+  
 
 .membership-box .find-out-more {
-    color: #ffffff; /* Change link color */
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
     background-color: #000000;
     border-radius: 5px;
     margin: 10px;
-    align-self: flex-end; 
-    margin-top: auto; 
-    transition: background-color 0.3s; /* Added transition property */
+    align-self: center; /* Align the button to the center */
+    transition: background-color 0.3s;
 }
-
 
 .membership-box .find-out-more:hover {
     background-color: #f9f4f4;
-    color: #000000;   
+    color: #000000;
 }
 
 
@@ -470,98 +482,6 @@
 }
 
 
-
-.visit-container{
-  background-color: #000000;
-}
-
-.visit-container .header{
-  color: #ffffff;
-  padding: 10px 10px 10px 20px;
-
-
-}
-.content-h {
-  font-family: 'Josefin Sans', serif;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.content .copy
- {
-  color: #ffffff;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: 0.5px;
-}
-
-.container-v {
-  width: 100%;
-  height: 650px;
-  background: #000000;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  
-}
-
-
-
-.card {
-  width: 350px;
-  box-shadow: 0 0 16px 0 rgba(20, 19, 19, 0.32);
-  cursor: pointer;
-  position: relative;
-  transform-origin: center;
-  transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
-  margin: 0 16px 0 0;
-}
-
-.card:last-child { margin: 0; }
-
-.card:hover { transform: scale(1.05); }
-
-.card .content {
-  padding: 40px 24px 48px 24px;
-  position: relative;
-  transition: all 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
-
-.card.split {
-  height: 480px;
-  background: rgba(22, 22, 22, 0.8);
-}
-
-.card.split:before {
-  content: '';
-  width: 100%;
-  height: 0;
-  background: #f3f3f3;
-  position: absolute;
-  bottom: 0;
-  transform-origin: bottom;
-  transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.card.split:hover:before { height: 277px;
- }
-
-.card.split .image img { width: 100%; height: auto; }
-
-/* Your existing CSS */
-
-.card.split:hover .content-h {
-    color: #000000; /* Change to the color you want */
-  }
-  
-  .card.split:hover .copy {
-    color: #000000; /* Change to the color you want */
-  }
 
 
 

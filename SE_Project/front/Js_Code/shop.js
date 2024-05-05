@@ -10,6 +10,62 @@ let products = [
         "name": "LD01 LOUNGE CHAIR",
         "price": 200,
         "image": "../image/img3.jpg"
+    },
+    {
+        "id": 1,
+        "name": "LD01 LOUNGE CHAIR",
+        "price": 200,
+        "image": "../image/img3.jpg"
+    },{
+        "id": 1,
+        "name": "LD01 LOUNGE CHAIR",
+        "price": 200,
+        "image": "../image/img3.jpg"
+    },{
+        "id": 1,
+        "name": "LD01 LOUNGE CHAIR",
+        "price": 200,
+        "image": "../image/img3.jpg"
+    },{
+        "id": 1,
+        "name": "LD01 LOUNGE CHAIR",
+        "price": 200,
+        "image": "../image/img3.jpg"
+    },{
+        "id": 1,
+        "name": "LD01 LOUNGE CHAIR",
+        "price": 200,
+        "image": "../image/img3.jpg"
+    },{
+        "id": 1,
+        "name": "LD01 LOUNGE CHAIR",
+        "price": 200,
+        "image": "../image/img3.jpg"
+    },{
+        "id": 1,
+        "name": "LD01 LOUNGE CHAIR",
+        "price": 200,
+        "image": "../image/img3.jpg"
+    },{
+        "id": 1,
+        "name": "LD01 LOUNGE CHAIR",
+        "price": 200,
+        "image": "../image/img3.jpg"
+    },{
+        "id": 1,
+        "name": "LD01 LOUNGE CHAIR",
+        "price": 200,
+        "image": "../image/img3.jpg"
+    },{
+        "id": 1,
+        "name": "LD01 LOUNGE CHAIR",
+        "price": 200,
+        "image": "../image/img3.jpg"
+    },{
+        "id": 1,
+        "name": "LD01 LOUNGE CHAIR",
+        "price": 200,
+        "image": "../image/img3.jpg"
     }
 ];
 let cart = [];
