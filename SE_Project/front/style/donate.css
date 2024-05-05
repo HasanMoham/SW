@@ -222,7 +222,7 @@
     font-weight: 600;
   }
   
-  .visit-container-2 .content .copy
+  .visit-container-2 .content-v .copy
    {
     color: #ffffff;
     font-size: 20px;
@@ -258,7 +258,7 @@
   
   .visit-container-2 .card:hover { transform: scale(1.05); }
   
-  .visit-container-2 .card .content {
+  .visit-container-2 .card .content-v {
     padding: 40px 24px 48px 24px;
     position: relative;
     transition: all 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
